@@ -40,4 +40,13 @@ int Z2 = Convert.ToInt32(Console.ReadLine());
 double distanceAB;
 Console.WriteLine(distanceAB = Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2) + Math.Pow((Z2 - Z1), 2)));
 
+//Задача 23
+//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
+Console.WriteLine("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+int count = 1;
+while (count <= num)
+{
+    Console.Write($"|{Math.Pow(count++, 3)}|");
+}
